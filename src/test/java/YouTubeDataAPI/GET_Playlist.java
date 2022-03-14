@@ -11,14 +11,14 @@ import org.junit.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import utilsAPIs.YouTubeDataAPI_Constants;
-import utilsAPIs.YouTubeDataAPI_Global_Variables;
+import utilsYouTubeDataAPI.YouTubeDataAPI_Constants;
+import utilsYouTubeDataAPI.YouTubeDataAPI_Global_Variables;
 
 public class GET_Playlist {
 
 	@Test
 
-	public void get_Playlist() 
+	public void get_Playlist() {
 
 		RestAssured.baseURI = YouTubeDataAPI_Constants.BASE_URI;
 

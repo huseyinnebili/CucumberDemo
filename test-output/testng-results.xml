@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="722" started-at="2022-03-11T22:04:52Z" finished-at="2022-03-11T22:04:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="722" started-at="2022-03-11T22:04:52Z" finished-at="2022-03-11T22:04:53Z">
+      <class name="employeesDD.ResultsetMetaData_JDBCDemo6_Employees">
+        <test-method status="PASS" signature="getColumn_Name()[pri:0, instance:employeesDD.ResultsetMetaData_JDBCDemo6_Employees@146ba0ac]" name="getColumn_Name" duration-ms="666" started-at="2022-03-11T22:04:52Z" finished-at="2022-03-11T22:04:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getColumn_Name -->
+        <test-method status="PASS" signature="getColumn_Type_Name()[pri:0, instance:employeesDD.ResultsetMetaData_JDBCDemo6_Employees@146ba0ac]" name="getColumn_Type_Name" duration-ms="22" started-at="2022-03-11T22:04:53Z" finished-at="2022-03-11T22:04:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getColumn_Type_Name -->
+      </class> <!-- employeesDD.ResultsetMetaData_JDBCDemo6_Employees -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

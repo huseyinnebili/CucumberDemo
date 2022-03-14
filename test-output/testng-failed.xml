@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="employeesDD.ResultsetMetaData_JDBCDemo6_Employees">
+        <methods>
+          <include name="getColumn_Type_Name"/>
+          <include name="setRsMetaData"/>
+          <include name="getColumn_Name"/>
+          <include name="getRsMetaData"/>
+        </methods>
+      </class> <!-- employeesDD.ResultsetMetaData_JDBCDemo6_Employees -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,7 @@
 package toolsqaBookAPI;
 
+
+
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
@@ -15,7 +17,7 @@ public class POST_GenerateToken {
 
 	// Short way_1
 
-	//@Test
+	@Test
 
 	public void generateToken_1() {
 
@@ -23,35 +25,37 @@ public class POST_GenerateToken {
 
 		RestAssured.
 
-				given().
+				given()
 
-				contentType("application/json").body(ToolsQA_Constants.GENERATE_TOKEN_PAYLOAD).
+				  .contentType("application/json")
+				
+				  .body( ToolsQA_Constants.GENERATE_TOKEN_PAYLOAD)
 
-				when().
+				.when()
 
-				post(ToolsQA_Constants.GENERATE_TOKEN_ENDPOINT).prettyPeek().
+				    .post(ToolsQA_Constants.GENERATE_TOKEN_ENDPOINT).prettyPeek().
 
 				then().
 
-				assertThat().statusCode(200).and().
+				    assertThat().statusCode(200).and().
 
-				assertThat().header("Server", "nginx/1.17.10 (Ubuntu)").and().
+				    assertThat().header("Server", "nginx/1.17.10 (Ubuntu)").and().
 
-				assertThat().time(lessThan(3000L)).and().
+				    assertThat().time(lessThan(3000L)).and().
 
-				assertThat().body("status", equalToIgnoringCase("Success")).and().
+			     	assertThat().body("status", equalToIgnoringCase("Success")).and().
 
-				assertThat().body("result", startsWith("User")).and().
+			    	assertThat().body("result", startsWith("User")).and().
 
-				assertThat().body("result", endsWith("successfully.")).and().
+				    assertThat().body("result", endsWith("successfully.")).and().
 
-				assertThat().body("result", containsString("authorized"));
+				    assertThat().body("result", containsString("authorized"));
 
 	}
 
 	// Short way_2
 
-	@Test
+//	@Test
 
 	public void generateToken_2() {
 
